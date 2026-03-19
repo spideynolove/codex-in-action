@@ -1,0 +1,1 @@
+/home/hung/.claude/skills/sequential-thinking/SKILL.md
