@@ -2,7 +2,6 @@
 
 This profile snapshots the Codex setup from the source machine:
 
-- `codex/config.toml`
 - `agents/skills/`
 
 Apply on another machine:
@@ -14,7 +13,6 @@ cd profiles/home-pc
 
 This copies:
 
-- `codex/config.toml` to `~/.codex/config.toml`
 - `agents/skills/*` to `~/.agents/skills/`
 
 Restart Codex after applying.
