@@ -1,0 +1,466 @@
+Codex and Claw code are very trendy
+recently. And right now there's a huge
+debate on whether we should use GPT 5.5
+or the Opus 4.7. So rather than debating
+which one to use, why not we should use
+both using a plugin called Codex plugin
+instead of Claw code. And with this
+plugin we can use Codex from Claw code
+to review code and delegate tasks to
+Codex so that we can use Codex here as a
+second pair of eye when using Claw code.
+And of course don't forget to subscribe
+to this channel because in my next
+coming video I'm going to make a full
+tutorial on how you can use Codex and
+the things that we're going to cover
+like the installations, the basic usage,
+all the way to like code management,
+cloud mode, memory, automations, skills,
+MCPs, all the way to computer
+automation. But in this video we're
+going to take a look at how we can use
+Codex as a plugin instead of Claw code
+to get the full benefits. So with that
+being said, if that sounds interesting,
+let's get into this. Now before we
+continue, I recently launched our school
+community where I help you to master AI
+agents, automations, and so much more.
+And that's all coming from someone who
+used to work as a senior AI software
+engineer at companies like Amazon and
+Microsoft. And in this community you're
+going to get over 100 plus video
+materials like templates and workflows
+that I personally built and sold over
+100 plus times. On top of that you're
+also going to get access to our weekly
+live calls. And just to give you an
+idea, this week we're actually running a
+Claw code masterclass where we're going
+to dive into how to improve Claw code's
+accuracy where we're going to use it to
+build the applications. Plus you're also
+going to get full community supports
+where you're going to get a chance to
+ask questions and get direct answers
+back. So if you're ready to level up,
+make sure to drop right in and I'll see
+you in the community. All right. So to
+get started, first what we're going to
+do here is to make sure that you install
+Codex plugin for Claw code. And simply
+to get started, what we're going to do
+here is to make sure to have the
+requirements down like the GPT
+subscriptions and also Node.js 18. But
+first let's try to have this installed
+on our local machine first. Now of
+course make sure to have Claw code
+installed on your local machine. And if
+you haven't get started with Claw code,
+make sure to check out this video right
+here where I teach you exactly how to
+get started with Claw code for absolute
+beginners. So then after that's done,
+all we have to do here is just going to
+add the Codex plugins into our
+marketplace first. So in this case I'm
+going to copy this command and I'm going
+to head over to a new Claw code session
+inside of a project. And all we have to
+do here is just going to paste that
+command that we just copy and it's going
+to add this plugin into our marketplace
+for us to install. So once we have this
+fully added into our marketplace, the
+next thing we're going to do here is to
+install this plugin into our project. So
+in this case I'm going to copy this
+command right here, head over to our
+Claw code session, and just going to
+paste it. And here you can see it's
+going to ask if I want to install this
+for my personal level like per user
+level or all the collaborators on this
+repository. So I'm just going to choose
+the second option right here.
+Then what we're going to do here is
+we're going to reload the plugins to
+make sure that this plugin here is
+reflected onto our current session. So
+you can see we have reflected that and
+it's going to uh reload the plugins
+right here. And the next command we're
+going to run here is the Codex setup.
+This will basically set up our Codex
+here onto our local machine if we
+haven't done so, right? Ideally um you
+can just do npm install globally for the
+OpenAI Codex. But if you haven't
+installed that, you just simply just
+going to do the Codex setup. It's
+automatically find if you have that
+installed or not and it's going to help
+us to prompt it and try to install this
+onto our local machine. So you can see
+here that right now it's going to look
+through our coding, our project here to
+see if we have this installed for Codex.
+And if it doesn't, you can see it's
+going to prompt me, "Hey, Codex is not
+installed. Should I install it now
+through npm?" And I'm going to say yes,
+let's install this on uh through npm
+here in our local machine. All right. So
+now after we have the Codex installed,
+the next thing we're going to do here is
+to authenticate it. So simply you can
+see it gives you a command. It's simply
+just going to run this inside of our
+Claw code session. It's going to
+authenticate ourself by having a browser
+pop up. And then here you can see it's
+going to ask me to log in to ChatGPT and
+I'm just going to click on continue with
+Google here. Okay. So now you can see we
+have successfully logged in. And now as
+you can see that once we have logged in,
+it also has created a folder inside of
+our dot call folder for Codex. And we
+have our log, our memory, our temporary
+file. And most importantly there's a
+configuration.toml file. And inside of
+this it has specified the GPT, the
+model, and also the model reasoning
+efforts, how much we can also change the
+high, low, or medium. So we can change
+it here, right? So because I'm using the
+free tier, so I'm going to show you an
+example. And let's say if I want to use
+the one of the command from the Codex
+for the adversary review just for me to
+make sure to test it, right? And you can
+see I have pointed out that I want to
+review on the base branch which is
+currently where I'm at right now. And
+you don't have to specify that if you
+don't have to. So in this case I'm going
+to point it to one of the skill that I
+have which can help me to open my
+browser and be able to navigate to
+Fiverr and you know reply to my message
+on my inbox. So I'm just going to say,
+"Hey, why don't you take a look at the
+skill and see how you can be refined
+it." And I'm going to do in a plan mode
+and see if it works.
+And the right away you can see we can be
+able to either wait for the results or
+we can run this in the background. So in
+this case I'm going to choose the first
+option here to wait for the results and
+see if it actually really works. Now
+unfortunately when I run this it still
+says that 5.5 model here is not
+supported when using Codex with a GPT
+account. Unfortunately because I'm
+currently using the free tier. But I do
+remember that I have set this inside of
+our configuration.toml file. And what I
+did then is basically copy this
+conversation, pass it to a Claw code
+session, and you can see here that it
+basically pointed that we have to change
+it inside of our global for the
+configuration.toml file. And we
+basically set the model here that we're
+using is GPT 4. 5.4 and the model
+reasoning effort here is going to be
+medium. And here as you can see we have
+that have already set. So now if I were
+to re-run the adversary review, it
+should pick up using the right model.
+Now speaking of the model here you can
+see I'm using the GPT 5.4. And the
+reason is because 5.5 here is strictly
+reserved for plus, pro, and team
+accounts which let's say if you are not
+using the pro version or the team
+version or the plus version, then using
+GPT 5.4 here is indeed the highest tier
+model that is available to you. But
+again, you know, if you want how some
+higher model here to run compare with,
+you know, side by side with Opus 4.7 or
+like Sonnet 4.7 here, then you
+definitely need to uh use something like
+the pro version here that can help you
+to level up. I'm just going to using GPT
+5.4 here just for demonstration here. So
+that's exactly what I did and I
+basically just re-triggered a new Claw
+code session passing the same prompt and
+using the adversary review for the
+Codex. And here you can see we have what
+it finds. And the same thing it just
+triggered a user question to see if you
+want to wait for the results or in
+running the background. I choose to wait
+for the results and here is what the
+result look like. So we have the Codex
+adversary review for this particular
+skill. And essentially what I highlight
+here is that first of all there's no
+account or the workspace verification
+before reading or sending candidate
+message. And the other one is bad reply
+flow. So there could be we're using the
+same template over and over again,
+right? Let's say if we have So you can
+see that the template that we're going
+to send to candidate is in line inside
+of our skill. So we definitely want to
+let's say if we want to modify it,
+definitely don't want to modify the
+skill directly. We definitely want to
+modify a file, right? Maybe like a
+reference file or something like that.
+And that's what we recommend for the
+feedback for the skill. So you can see
+that this is the Codex adversary review
+1 2 3. So two high and one medium. And
+then here you can see I have also run
+the same prompt using the model Opus 4.7
+and you can see that this is what the
+result look like. So we have, "Hey, what
+does well?" You can see. And also top
+issues. So browser tools here is not
+defined. So you can see 1 2 3 4 5 6 7 8
+9 10 all the way to 10. So you can see
+that there's actually a lot of feedbacks
+that have been caught. And there's also
+some um overlays as well. For example,
+the template here is duplicate like what
+we just saw from the GPT. So overall you
+can see that we have a lot more feedback
+compared to the GPT 5.4. We're getting a
+lot more feedback for Opus 4.7. Now
+obviously it at this point you can see
+it's not really apples to compare to
+apple because 5.4 here is a really older
+model. And you can see that it was
+released on March 5th, 2026. And the 4.7
+here is released in April. So it's kind
+of like a one month in between, right?
+But obviously if you are upgraded to the
+pro member or the plus member,
+definitely you can be able to use GPT
+5.5 which is the latest model that you
+have, right? But for this demonstration
+I'm just going to give you an example
+and that's all, right? And that's
+exactly how it works. So after I have
+everything down, then I basically ask it
+to do a comparison between the two. So
+GPT 5.4 for findings. So accounts
+workspace replies. So I had it knows. So
+you can see that has fly something that
+our current model here doesn't catch,
+right? So GPT 5 is right that I didn't
+think about the wrong tenants since real
+risk in the reuse browser. Uh there's
+also this one which is also partially
+like what we already have, right? And
+then there's the applicant data. So this
+one something that GPT has raised for
+the privacy and consent. I said the
+Telegram should be more default per the
+cloud MD file. Both true. So resolution
+here you can see we have something to
+overlay and we also have GPT 5.4 here
+catch something that Opus did not catch.
+So you can see that we can use kind of
+like those two models side by side
+together as kind of like the pair
+programming here to help us to, you
+know, refine the code or make it much
+more accurate to give it like an extra
+pair of eye in terms of decision that we
+need to make inside of our project,
+right? So you can see, "Hey, well I
+caught that GPT 5 missed." Right? So you
+can see that's the things that we have
+caught, right? So it's not saying that
+which one is better or which one who
+should we use over the other. It's
+really, "Hey, we can be able to use it
+side by side using the Codex plugins so
+that we can be able to building
+application here much more accurate."
+That maybe there's certain limitation
+that each model has. And we can use this
+approach here to do this side by side
+and be able to catch bugs early, okay?
+So you can see that that's exactly how
+it works. So it gives you a plan, "Hey,
+how to optimize Fiverr inbox skill." And
+here is how it works. So you can see it
+tells exactly how we're going to develop
+this, how we're going to refine this bit
+more, right? So we're going to say yes,
+let's do this. And you can see that's
+exactly how this works. Before we jump
+into the next part, I want to quickly
+show you something I've been using while
+building some of my projects. So if
+you've ever used AI to generate code,
+you've probably noticed it works, but it
+also breaks in ways you don't always
+catch right away. That's basically where
+TestSprite comes in. It's an AI testing
+agent that goes through your app,
+figures out what it's supposed to do,
+and then checks if everything actually
+works the way it should. Now what's
+changed recently is how it fits into
+your workflow. So I'm inside Cursor here
+and through their MCP integration, it's
+not something I run separately. I can
+generate code, test it, fix things, and
+rerun everything right here in the IDE,
+which makes it feel way more natural
+when you're iterating. Where it gets
+really useful is when you start changing
+stuff. So, let's say I update part of
+the logic. Instead of just running the
+same test again, it actually rechecks
+the flow and catches new issues that
+come from those changes. That's a big
+deal because most setups don't really
+handle that well once you start
+iterating. And if a test isn't quite
+right, you can actually edit it visually
+instead of digging through a bunch of
+test code. So, I can click into a step,
+adjust what it's checking or regenerate
+part of the flow and keep everything
+else intact, which makes it a lot easier
+to control what's actually being tested.
+On top of that, they also added GitHub
+integration. So, whenever you push
+changes, it runs tests on your pull
+request and shows you exactly what
+passed or failed before you merge
+anything. It basically acts like a
+safety check so you don't accidentally
+ship something broken. Also, quick
+mention, they're running a hackathon
+right now with a $3,000 prize pool. So,
+if you're building anything or just
+experimenting with AI projects, it's
+actually a pretty fun way to try this
+out. I'll leave a link in the
+description if you want to check it out.
+Okay, now let's get back into the video.
+Lastly, what I want to talk about is
+basically what are some skills? What are
+some commands that Codex come with that
+we can use? So, the first one we have is
+the Codex review. And the review part is
+basically to try to review the
+uncommitted changes for logic and
+readability. And you can see here that
+we can specify the essential flags like,
+"Hey, what branch we want to do the
+review? And should we do this in the
+background?" Right, offload the review
+here in the background so that we can
+keep the clock working at the same time.
+Right, so this is basically review.
+Let's say you finish a code changes
+Claude wrote and here currently is
+uncommitted, you can just use this
+command here, right? Through the slash
+command for the review for a Codex. It
+will basically review the uncommitted
+changes to see if there's anything that
+we need to fix. And the second one we
+also have is the upserver review, which
+is the which is a skill that we just
+ran. And it's basically going to do a
+high-intensity security and edge case
+audit. See if there's any edge case or
+any securities that we need to focus on,
+right? You can also give it a prompt,
+"Hey, focusing on the SQL injections or
+focusing on this particular file or this
+particular component." You can
+specifically mention that and it's going
+to do a complete auto review for this.
+And we also have a rescue. So, let's say
+if a Claude code struggling for fixing a
+bug, you can delegate this to Codex here
+to fix it. So, it's going to delegate a
+code fix task or a task in general with
+that Claude is struggling with to Codex
+and Codex going to, you know, apply
+that. And some of the flag that you can
+run, for example, like resume, apply the
+best fix from the previous one. Or you
+can also specify the model, "Hey, like I
+want to use like GPT 5.5 or the effort
+here I want to use is high or medium."
+Stuff like this, right? So, you can do
+this. So, just recap, we can review, we
+can be able to do the full audit for the
+edge case, we can also be able to fix
+things using Codex. So, there's also the
+status. So, let's say if you're doing
+this something in the background, right?
+Like, "I want to have a Claude code here
+running, but I also want to have Codex
+here to do the review." You can also
+using Codex here running in the
+background with the tag of the
+background tag. And after you run that,
+you can just do the Codex status to keep
+track of our status, right? And
+furthermore, there's also results. So,
+after the entire background job is done,
+you can just pull the completed reports
+from the background job and it gives you
+the result what it looks like.
+Furthermore, there's also cancel. If
+you're running a background job, you can
+also be able to do the Codex cancel to
+terminate the ongoing background jobs.
+So, you can see that these are all the
+commands that we have for Codex that we
+can run to review, to do the full audit,
+to delegate task or bug fix to Codex.
+And there's also the status, the
+results, cancel, and so much more. So,
+you can see that there's a lot of things
+you can do with Codex. And of course, we
+have already went over the Codex setup
+on how we can be able to set up Codex on
+your local machine. And as you can see,
+that's pretty much it for this video on
+how you can use Codex as kind of like
+your second pair of eye inside of Claude
+code. But of course, this is just a tip
+of iceberg for using Codex, right? We
+haven't ever seen how to use can Codex.
+I never done a tutorial on this on
+before. So, if you're interested to see
+me do a video tutorial, a full tutorial
+on how you can set up Codex, how you can
+use Codex, because for my next coming
+video, I'm planning on making a full
+tutorial on how you can use Codex. So,
+if you're interested for this content,
+make sure to like this video, comment
+down below, subscribe, and I'll see you
+in the next video.
